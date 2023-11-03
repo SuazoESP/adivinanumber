@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanza de Números</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Adivinanza de Números</h1>
+        <p>Intenta adivinar el número entre 1 y 100.</p>
+        <div class="input-container">
+            <input type="number" id="guessInput" min="1" max="100">
+            <input type="submit" value="Adivinar" id="guessSubmit" disabled>
+        </div>
+        <div id="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+        <button id="resetButton" onclick="resetGame()">Empezar nuevo juego</button>
+        <div id="timer">Tiempo restante: <span id="countdown">60</span> s</div>
+    </div>
+
+    <div class="input-container">
+        <label for="attemptsInput">Número de Intentos:</label>
+        <input type="number" id="attemptsInput" min="1" value="10">
+        <button id="selectAttemptsButton" onclick="selectAttempts()">Seleccionar</button>
+    </div>
+
+    <script async src="script.js"></script>
+</body>
+</html>

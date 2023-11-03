@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    background-color: #262626;
+    color: #ffcc00; /* Cambio de color de texto principal */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    max-width: 400px;
+}
+
+/* Estilos para el título */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffcc00;
+}
+
+/* Estilos para los campos de entrada y botones */
+.input-container {
+    margin: 20px 0;
+}
+
+.input-container input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+}
+
+#guessSubmit, #selectAttemptsButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffcc00;
+    color: #262626;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetButton {
+    display: none;
+    background-color: #ffcc00;
+    color: #262626;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    background-color: #ffdb58;
+}
+
+/* Estilos para el contador */
+#timer {
+    font-size: 20px;
+    color: #ffcc00;
+    transition: font-size 0.5s;
+}
+
+#countdown {
+    color: #ffcc00;
+}
+
+/* Estilos para los resultados */
+#resultParas {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.resultParas p {
+    margin: 5px;
+}
+
+/* Estilos para los mensajes de resultados */
+.lastResult {
+    background-color: #ff5252;
+    color: #fff;
+    border: 1px solid #ff0000;
+}
+
+.guesses {
+    background-color: #333;
+    color: #ffcc00; /* Cambio de color de texto en "guesses" */
+}
+
+.lowOrHi {
+    background-color: #333;
+    color: #ffcc00; /* Cambio de color de texto en "lowOrHi" */
+}
